@@ -1,0 +1,382 @@
+{
+  "category": [
+    {
+      "name": "Xử lý nước thải",
+      "sub": [
+        {
+          "namesub": "Xử lý nước thải y tế",
+          "key": "4328493048"
+        },
+        {
+          "namesub": "Xử lý nước thải công nghiệp",
+          "key": "2857349201"
+        },
+        {
+          "namesub": "Xử lý nước thải công nghiệp",
+          "key": "1273940234"
+        },
+        {
+          "namesub": "Xử lý nước thải sinh hoạt",
+          "key": "9203741284"
+        },
+        {
+          "namesub": "Xử lý nước thải nhà máy xí nghiệp",
+          "key": "5039218745"
+        }
+      ]
+    },
+    {
+      "name": "Xử lý nước công nghiệp",
+      "sub": [
+        {
+          "namesub": "Xử lý nước giếng khoan",
+          "key": "4820391284"
+        },
+        {
+          "namesub": "Xử lý nước tinh khiết",
+          "key": "8573948123"
+        },
+        {
+          "namesub": "Xử lý nước DI",
+          "key": "9837458120"
+        },
+        {
+          "namesub": "Xử lý nước mặt",
+          "key": "2139487502"
+        },
+        {
+          "namesub": "Xử lý nước mặt",
+          "key": "3857491283"
+        },
+        {
+          "namesub": "Xử lý nước biển",
+          "key": "9475820341"
+        },
+        {
+          "namesub": "Hệ lọc cho sản xuất thực phẩm",
+          "key": "1029384756"
+        },
+        {
+          "namesub": "Hệ thống xử lý nước nhiễm mặn",
+          "key": "5647382910"
+        }
+      ]
+    },
+    {
+      "name": "Lọc nước sinh hoạt",
+      "sub": [
+        {
+          "namesub": "Lọc tổng cho căn hộ gia đình",
+          "key": "8475930218"
+        },
+        {
+          "namesub": "Lọc tổng cho chung cư",
+          "key": "1239485764"
+        },
+        {
+          "namesub": "Lọc tổng cho villa, biệt thự cao cấp",
+          "key": "9583745023"
+        }
+      ]
+    },
+    {
+      "name": "Thiết bị lọc gia đình",
+      "sub": [
+        {
+          "namesub": "Máy lọc nước gia đình",
+          "key": "5839210476"
+        },
+        {
+          "namesub": "Máy lọc nước RO bếp",
+          "key": "8475930214"
+        },
+        {
+          "namesub": "Cây lọc nước có chức năng nóng lạnh",
+          "key": "4820394756"
+        },
+        {
+          "namesub": "Lọc trực tiếp đầu vòi ozon",
+          "key": "7495830215"
+        },
+        {
+          "namesub": "Máy kiềm tính Alkamedi",
+          "key": "2039485762"
+        },
+        {
+          "namesub": "Lõi lọc linh phụ kiện lọc gia đình",
+          "key": "1239485763"
+        }
+      ]
+    },
+    {
+      "name": "Linh phụ kiện và vật liệu công nghiệp",
+      "sub": [
+        {
+          "namesub": "Vật liệu lọc",
+          "key": "9583745021"
+        },
+        {
+          "namesub": "Thiết bị diệt khuẩn",
+          "key": "8475930201"
+        },
+        {
+          "namesub": "Van điều khiển hệ lọc",
+          "key": "4820394758"
+        },
+        {
+          "namesub": "Phin lọc",
+          "key": "7495830201"
+        },
+        {
+          "namesub": "Cột lọc",
+          "key": "2039485761"
+        },
+        {
+          "namesub": "Màn lọc RO",
+          "key": "1239485762"
+        },
+        {
+          "namesub": "Màn lọc compisite và lưới chặn hạt",
+          "key": "9583745020"
+        },
+        {
+          "namesub": "Vỏ màng compisite và inox",
+          "key": "8475930202"
+        },
+        {
+          "namesub": "Thùng muối hoàn nguyên",
+          "key": "4820394757"
+        },
+        {
+          "namesub": "Thiết bị đo lưu lượng, áp suất & phụ kiện",
+          "key": "7495830202"
+        },
+        {
+          "namesub": "Màng siêu lọc UF",
+          "key": "2039485760"
+        },
+        {
+          "namesub": "Lõi lọc",
+          "key": "1239485761"
+        }
+      ]
+    },
+    {
+      "name": "Dịch vụ cho thuê",
+      "sub": [
+        {
+          "namesub": "Dịch vụ, bảo hành bảo dưỡng",
+          "key": "9583745019"
+        },
+        {
+          "namesub": "Dịch vụ, thay lõi lọc nước tại nhà",
+          "key": "8475930203"
+        },
+        {
+          "namesub": "Dịch vụ kiểm tra nước",
+          "key": "4820394759"
+        },
+        {
+          "namesub": "Cung cấp dịch vụ bảo hành, sữa chữa hệ thống lọc nước",
+          "key": "7495830203"
+        },
+        {
+          "namesub": "Cho thuê máy lọc nước dùng trong công xưởng, trường hợp, công suất từ 30 - 500l/h",
+          "key": "2039485759"
+        },
+        {
+          "namesub": "Cho thuê máy lọc nước gia đình",
+          "key": "1239485760"
+        }
+      ]
+    },
+    {
+      "name": "Lọc toàn bộ chung cư",
+      "sub": [
+        {
+          "namesub": "Hệ thống lọc nước",
+          "key": "9583745018"
+        },
+        {
+          "namesub": "Thiết bị lọc tổng",
+          "key": "8475930204"
+        },
+        {
+          "namesub": "Bộ lọc nước đầu nguồn",
+          "key": "4820394760"
+        },
+        {
+          "namesub": "Thiết bị lọc nước UF",
+          "key": "7495830204"
+        },
+        {
+          "namesub": "Máy lọc nước uống",
+          "key": "2039485758"
+        }
+      ]
+    },
+    {
+      "name": "Lọc tổng cho nhà hàng khách sạn",
+      "sub": [
+        {
+          "namesub": "Lọc nước đầu nguồn",
+          "key": "9583745017"
+        },
+        {
+          "namesub": "Lọc nước sinh hoạt",
+          "key": "8475930205"
+        },
+        {
+          "namesub": "Máy lọc nước uống",
+          "key": "4820394761"
+        },
+        {
+          "namesub": "Hệ thống lọc nước tinh khiết",
+          "key": "7495830205"
+        },
+        {
+          "namesub": "Hệ thống lọc nước tổng",
+          "key": "2039485757"
+        }
+      ]
+    }
+  ],
+  "admin": {
+    "username": "aqualife2023",
+    "password": "4297f44b13955235245b2497399d7a93"
+  },
+  "productsale": [
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    }
+  ],
+  "productnew": [
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    },
+    {
+      "name": "Máy lọc nước Aqualife 2 vòi nóng nguội",
+      "priceNormal": 7300000,
+      "priceSale": 6900000,
+      "image": "https://aqualife.com.vn/wp-content/uploads/2021/08/may-loc-nuoc-aqualife-2-voi-nong-lanh-nguoi-hc03_result.jpg",
+      "des": "",
+      "percentSale": "10%"
+    }
+  ],
+  "post": [
+    {
+      "titleSEO": "",
+      "keyword": "",
+      "des": "",
+      "avt": "",
+      "detail": "",
+      "idcate": ""
+    }
+  ]
+}
