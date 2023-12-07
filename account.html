@@ -51,9 +51,6 @@
           <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <!-- Spinner End -->
-
-      <!-- Sidebar Start -->
       <div class="sidebar pe-4 pb-3">
         <nav class="navbar bg-light navbar-light">
           <a href="index.html" class="navbar-brand mx-4 mb-3">
@@ -70,7 +67,7 @@
             <div class="nav-item dropdown">
               <a
                 href="#"
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
                 ><i class="fa fa-laptop me-2"></i>Sản phẩm</a
               >
@@ -93,55 +90,56 @@
               ><i class="fa fa-table me-2"></i>Bài viết</a
             >
             <a href="category.html" class="nav-item nav-link"
-            ><i class="fa fa-table me-2"></i>Danh mục</a
-          >
-          <a href="account.html" class="nav-item nav-link "
-          ><i class="fa fa-user me-2"></i>Tài khoản</a
-        >
+              ><i class="fa fa-table me-2"></i>Danh mục</a
+            >
+            <a href="account.html" class="nav-item nav-link active"
+              ><i class="fa fa-user me-2"></i>Tài khoản</a
+            >
           </div>
         </nav>
       </div>
-      <!-- Sidebar End -->
-
-      <!-- Content Start -->
-      <div class="content">
-        <div class="container-fluid pt-4 px-4">
-          <div class="row g-4">
-            <div class="col-12">
-              <div class="bg-light rounded h-100 p-4">
-                <div class="d-flex justify-content-between py-4">
-                  <h6 class="mb-4">Danh mục sản phẩm</h6>
-                  <div id="add_product"></div>
-                </div>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Tên</th>
-                        <th scope="col">Giá Gốc</th>
-                        <th scope="col">Giá giảm giá</th>
-                        <th scope="col">Ảnh</th>
-                        <th scope="col">% giảm giá</th>
-                        <th scope="col">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody id="table"></tbody>
-                  </table>
-                </div>
-              </div>
+      <div class="content py-3">
+        <h2>Đổi mật khẩu</h2>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" 
+              >Nhập mật khẩu cũ</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="passafter"
+              aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text">
+              Nhập sai sẽ không đổi được mật khẩu
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Content End -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label" 
+              >Nhập mật khẩu mới</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="passbefore" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Nhập lại mật khẩu mới</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="passbeforeEnter" />
+          </div>
 
-      <!-- Back to Top -->
+          <button type="submit" class="btn btn-primary">Lưu</button>
+        </form>
+      </div>
       <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
         ><i class="bi bi-arrow-up"></i
       ></a>
     </div>
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/chart/chart.min.js"></script>
@@ -151,82 +149,43 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
     <script>
-      async function deleteProduct(cate, key) {
-        try {
-          const response = await fetch(
-            `https://congtyxulynuoc-1fb58-default-rtdb.firebaseio.com/${cate}/${key}.json`,
-            {
-              method: "DELETE",
-            }
-          );
-
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          console.log("Sản phẩm đã được xóa thành công");
-          // Tải lại trang hoặc cập nhật giao diện người dùng
-          window.location.reload();
-        } catch (error) {
-          console.error("Failed to delete product:", error);
-        }
-      }
-
-      // Gắn sự kiện click cho các nút Xóa
-      function setupDeleteButtons() {
-        const deleteButtons = document.querySelectorAll(".btn-danger");
-        deleteButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const cate = this.getAttribute("data-cate");
-            const key = this.getAttribute("data-key");
-            if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này?")) {
-              deleteProduct(cate, key);
-            }
-          });
-        });
-      }
-
-      let param = new URLSearchParams(window.location.search);
-      let name = param.get("name");
-
-      (async () => {
-        const add_product = document.querySelector("#add_product");
-        add_product.innerHTML += `
-      <a href="addproduct.html?name=${name}" class="btn btn-success">Thêm sản phẩm</a>
-      `;
+      const saveChange = async () => {
+        const passafter = document.querySelector("#passafter").value;
+        const passbefore = document.querySelector("#passbefore").value;
+        const passbeforeEnter =
+          document.querySelector("#passbeforeEnter").value;
         const res = await fetch(
-          `https://congtyxulynuoc-1fb58-default-rtdb.firebaseio.com/${name}.json`
+          `https://congtyxulynuoc-1fb58-default-rtdb.firebaseio.com/admin.json`
         );
         const data = await res.json();
-        console.log(data);
-        const table = document.querySelector("#table");
-        if (data) {
-          Object.entries(data).map(([key, value]) => {
-            if (value != null) {
-              table.innerHTML += `
-                <tr>
-                        <td>${value.name}</td>
-                        <td>${value.priceNormal}</td>
-                        <td>${value.priceSale}</td>
-                        <td>
-                            <img src="${value.image}" alt="" width="100px">
-                        </td>
-                        <td>${value.percentSale}</td>
-                        <td>
-                          <a href='./updateproduct.html?cate=${name}&&key=${key}' class="btn btn-primary">Sửa</a>
-                          <button class="btn btn-danger" data-cate="${name}" data-key="${key}">Xoá</button>
-
-                        </td>
-                      </tr>
-                `;
+        console.log(passbefore, passbeforeEnter);
+        if (md5(passafter) == data.password && passbefore == passbeforeEnter) {
+          fetch(
+            `https://congtyxulynuoc-1fb58-default-rtdb.firebaseio.com/admin.json`,
+            {
+              method: "PATCH",
+              body: JSON.stringify({
+                password: md5(passbefore),
+              }),
+              headers: {
+                "Content-Type": "application/json",
+              },
             }
-          });
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              // Xử lý phản hồi từ Firebase sau khi POST thành công
+              sessionStorage.removeItem("admin");
+              alert("Cập nhật mật khẩu thành công");
+              window.location.href = "./index.html";
+            });
+        } else {
+          alert("Nhập các trường không chính xác");
         }
-        setupDeleteButtons(); // Gọi sau khi tải và hiển thị dữ liệu
-      })();
+      };
     </script>
   </body>
 </html>
